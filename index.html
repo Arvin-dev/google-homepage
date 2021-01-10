@@ -1,81 +1,44 @@
 <head>
     <meta charset="utf-8">
     <title>Google Homepage Training</title>
-
-    <style>
-
-        #header {
-            background-color: aquamarine;   
-            display: flex;
-            flex-direction: row-reverse;
-        }
-
-        .header-item {
-            color: grey;
-        }
-
-        nav {
-            padding : 1%;
-        }
-        
-        #body {
-            width: 100%;
-            height: 80%;   
-            margin: auto;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            justify-content: center
-        }
-
-        #logo {
-            width: 30%;
-            height: 30%;
-        }
-
-
-        #search-section {
-            width: 100%;
-            display: flex;
-            flex-flow: column;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        #form {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        #query {
-            height: 30px;
-            width: 40%;
-            margin-bottom: 25px;
-            font-size: 15px;
-            padding: 5px 15px;
-            border: 1px solid #e2e2e2;
-            box-shadow: 0px 3px 2px #e2e2e2;
-            border-radius: 25px;
-        }
-    </style>
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <div id="header">
         <nav>
             <a href="index.html" class="header-item">Gmail</a>
-            <a href="index.html" id="images">Images</a> 
+            <a href="index.html" class="header-item">Images</a>
+            <a href="index.html"> 
+                <img id="hamburger" src="images/hamburger.jpg">
+            </a>
         </nav>
     </div>
 
     <div id="body">
-        <img id="logo" src="images/logo.jpg" alt="logo">
+        <img id="logo" src="images/logo.png" alt="logo">
         <div id="search-section">
             <form id ="form">
                 <input type="search" id="query" name="query"><br>
             </form>
+            <div id="search-buttons">
+                <button type="buttton">Google Search</button>
+                <button type="buttton">I'm Feeling Lucky</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-cont">
+        <div id="footer-right" class="f-subCont">
+            <a href="index.html" class="footer">Advertising</a>
+            <a href="index.html" class="footer">Bussiness</a>
+            <a href="index.html" class="footer">How Search Works</a>
+        </div>
+
+        <div id="footer-right" class="f-subCont">
+            <a href="index.html" class="footer">Privacy</a>
+            <a href="index.html" class="footer">Terms</a>
+            <a href="index.html" class="footer">Setting</a>
         </div>
     </div>
 
